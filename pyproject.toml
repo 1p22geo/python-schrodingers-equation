@@ -1,6 +1,6 @@
 [project]
 name = "libschrodinger"
-version = "1.2.3"
+version = "2.0.0-alpha-dev-notfinished"
 authors = [
   { name="1p22geo", email="1p22geodecki@gmail.com" },
   { name="KacperTZSTI", email="kacper.m.trzop@gmail.com" },
@@ -14,12 +14,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-  "numpy",
-  "scipy",
-  "matplotlib"
-  # libschrodinger is platform-independent and doesn't need flask at any point
-  # 
-  # on the other hand, it may need ffmpeg though.
 ]
 
 [project.urls]
@@ -27,4 +21,4 @@ Homepage = "https://github.com/1p22geo/schrodinger"
 Issues = "https://github.com/1p22geo/schrodinger/issues"
 
 [tool.setuptools.packages.find]
-include = ["libschrodinger", "libschrodinger.quark"]
+include = ["libschrodinger"]

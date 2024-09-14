@@ -1,0 +1,36 @@
+#:kivy 1.0.9
+
+<PongGame>:
+  ball: pong_ball
+
+  canvas:
+    Color:
+      rgba: 0.5, 0.5, 0.5, 0.3
+    Rectangle:
+      pos: self.center_x - 2, 0
+      size: 4, self.height
+  
+  Label:
+    font_size: 70
+    center_x: root.width / 4
+    top: root.top - 50
+    text: "0"
+
+  Label:
+    font_size: 70
+    center_x: root.width * 3 / 4
+    top: root.top - 50
+    text: "0"
+
+  PongBall:
+    id: pong_ball
+    center: self.parent.center
+
+
+  
+<PongBall>:
+  size: 30, 30
+  canvas:
+    Ellipse:
+      pos: self.pos
+      size: self.size
